@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music Box</string>
+    <string name="hellwalker">Hellwalker</string>
+    <string name="artist_name">Mick Gordan</string>
+    <string name="play_time_string">0:00</string>
+    <string name="left_time_string">0:00</string>
+</resources>

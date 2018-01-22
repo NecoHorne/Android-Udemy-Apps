@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconInfoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_dialog_alert" />
+            <TextView
+                android:id="@+id/winTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/iconInfoId"
+                android:text="Title"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/magnitudeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iconInfoId"
+                android:layout_below="@id/winTitle"
+                android:text="Magnitude"
+                android:paddingLeft="5dp"/>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/magnitudeId"
+                android:layout_marginLeft="6dp"
+                android:layout_alignBottom="@id/magnitudeId"
+                android:text="More Info..."
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorAccent"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
